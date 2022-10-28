@@ -1,0 +1,10 @@
+2022-10-28T14:15:05.460 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=4} has reached zero.
+2022-10-28T14:15:05.495 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=3} decreased.
+2022-10-28T14:15:05.496 : User bought Item{ item Id=A0, name=Doritos, cost=1.56, inventory=3}
+2022-10-28T14:31:24.313 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=2} decreased.
+2022-10-28T14:31:24.347 : User bought Item{ item Id=A0, name=Doritos, cost=1.56, inventory=2}
+2022-10-28T14:31:47.635 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=1} decreased.
+2022-10-28T14:31:47.635 : User bought Item{ item Id=A0, name=Doritos, cost=1.56, inventory=1}
+2022-10-28T14:31:55.397 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=0} decreased.
+2022-10-28T14:31:55.397 : User bought Item{ item Id=A0, name=Doritos, cost=1.56, inventory=0}
+2022-10-28T14:32:13.047 : Inventory of Item{ item Id=A0, name=Doritos, cost=1.56, inventory=0} has reached zero.

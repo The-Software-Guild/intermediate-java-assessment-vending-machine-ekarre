@@ -1,0 +1,8 @@
+A0:Doritos:1.56:3
+B0:Lays:1.45:4
+A1:Cookies:1.25:5
+B1:Pretzels:1.38:5
+A2:Fruit Snacks:1.00:5
+B2:Twizzlers:1.15:5
+A3:Snickers:0.75:3
+B3:M&Ms:0.85:5
