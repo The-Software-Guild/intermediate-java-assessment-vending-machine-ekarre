@@ -8,7 +8,16 @@ import java.util.*;
 
 public class FileDaoImpl implements FileDao {
     private static final String ITEM_FILE = "items.txt";
+    private String fileName;
     private static final String DELIMITER = ":";
+
+    public FileDaoImpl(String itemTextFile) {
+        fileName = itemTextFile;
+    }
+    public FileDaoImpl(){
+        fileName = ITEM_FILE;
+    }
+
     @Override
     public Item unmarshallItem(String line) {
         //take input line read from the file, and split it into pieces
@@ -36,7 +45,7 @@ public class FileDaoImpl implements FileDao {
     public void writeFile(Map<String, Item> itemsToWrite) throws VendingMachinePersistenceException {
         PrintWriter out;
         try {
-            out = new PrintWriter(new FileWriter(ITEM_FILE));
+            out = new PrintWriter(new FileWriter(fileName));
         } catch (IOException e) {
             throw new VendingMachinePersistenceException("can't save data", e);
         }
@@ -50,11 +59,11 @@ public class FileDaoImpl implements FileDao {
     }
 
     @Override
-    public Map<String, Item> readFile(String itemFile) throws VendingMachinePersistenceException {
+    public Map<String, Item> readFile() throws VendingMachinePersistenceException {
         Scanner scanner;
         Map<String, Item> localMapItems = new LinkedHashMap<>();
         try{
-            scanner = new Scanner(new BufferedReader(new FileReader(ITEM_FILE)));
+            scanner = new Scanner(new BufferedReader(new FileReader(fileName)));
         } catch (FileNotFoundException e) {
             throw new VendingMachinePersistenceException("can't load", e);
         }
